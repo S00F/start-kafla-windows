@@ -16,10 +16,11 @@ This project provides a batch script that automates the execution of two scripts
 
 ### 1️⃣ **Modify Configuration in `run_script.bat`**
 
-Before running the script, customize these variables inside `run_script.bat`:
+Before running the script, download kafka windows and put kafdrop in folder and modify the config`run_script.bat`:
 
 ```bat
-set "TARGET_FOLDER=C:\path\to\your\folder"   :: Change to your script folder
+set "KAFKA_FOLDER=C:\path\to\your\kafka folder"   :: Change to your kafka folder
+set "KAFDROP_FOLDER=C:\path\to\your\kafdrop folder"   :: Change to your kafdrop folder
 set "DELAY=5"   :: Delay (in seconds) before running script 2
 set "PORT=8080" :: Define the port to kill processes on
 ```
